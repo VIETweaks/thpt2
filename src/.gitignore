@@ -1,0 +1,60 @@
+# ========================================
+# WEBSITE TRƯỜNG THPT THĂNG LONG - HTML TĨNH
+# ========================================
+
+# ✅ TẤT CẢ FILE REACT/TSX ĐÃ ĐƯỢC XÓA HOÀN TOÀN!
+# Website giờ chỉ dùng HTML/CSS/JS thuần
+
+# Ignore mọi file React/TSX nếu ai đó tạo lại
+App.tsx*
+components/
+pages/
+utils/
+*.tsx
+*.ts
+styles/globals.css
+package.json
+package-lock.json
+node_modules/
+tsconfig.json
+tailwind.config.*
+vite.config.*
+next.config.*
+
+# Các file .DELETED (đánh dấu đã xóa)
+*.DELETED
+
+# ✅ WEBSITE CHỈ CÒN CÁC FILE NÀY:
+# ✅ index.html (trang chủ)
+# ✅ about.html (giới thiệu)
+# ✅ programs.html (chương trình)
+# ✅ admissions.html (tuyển sinh)  
+# ✅ news.html (tin tức)
+# ✅ contact.html (liên hệ)
+# ✅ contact-new.html (trang liên hệ mới)
+# ✅ styles.css (CSS chính)
+# ✅ script.js (JavaScript chính)
+# ✅ news-styles.css (CSS cho trang tin tức)
+# ✅ news-script.js (JS cho trang tin tức)
+# ✅ README.md (tài liệu)
+# ✅ DEPLOY-GUIDE.md (hướng dẫn deploy)
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.orig
+*~
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
