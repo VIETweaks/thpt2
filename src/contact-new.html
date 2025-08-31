@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <style>
         /* Contact Page Specific Styles */
+        
         .contact-hero {
             padding: 8rem 0 4rem;
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             position: relative;
             overflow: hidden;
         }
-
+        
         .contact-hero-bg {
             position: absolute;
             inset: 0;
             pointer-events: none;
         }
-
+        
         .contact-hero-content {
             text-align: center;
             position: relative;
             z-index: 10;
         }
-
+        
         .contact-hero-title {
             font-size: 3rem;
             font-weight: 800;
@@ -34,19 +36,19 @@
             margin-bottom: 1.5rem;
             line-height: 1.2;
         }
-
+        
         @media (min-width: 768px) {
             .contact-hero-title {
                 font-size: 4rem;
             }
         }
-
+        
         @media (min-width: 1024px) {
             .contact-hero-title {
                 font-size: 5rem;
             }
         }
-
+        
         .contact-hero-description {
             font-size: 1.25rem;
             color: var(--text-secondary);
@@ -54,37 +56,37 @@
             margin: 0 auto;
             line-height: 1.6;
         }
-
+        
         .contact-section {
             padding: 5rem 0;
             background: var(--bg-primary);
         }
-
+        
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr;
             gap: 3rem;
             align-items: start;
         }
-
+        
         @media (min-width: 1024px) {
             .contact-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 4rem;
             }
         }
-
+        
         .contact-info {
             space-y: 2rem;
         }
-
+        
         .contact-info-title {
             font-size: 2rem;
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 2rem;
         }
-
+        
         .contact-card {
             background: var(--bg-secondary);
             padding: 2rem;
@@ -93,19 +95,19 @@
             transition: all var(--transition-normal);
             border: 1px solid var(--border-light);
         }
-
+        
         .contact-card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-lg);
         }
-
+        
         .contact-card-header {
             display: flex;
             align-items: center;
             gap: 1rem;
             margin-bottom: 1rem;
         }
-
+        
         .contact-icon {
             width: 3rem;
             height: 3rem;
@@ -117,29 +119,29 @@
             color: white;
             flex-shrink: 0;
         }
-
+        
         .contact-icon svg {
             width: 1.5rem;
             height: 1.5rem;
         }
-
+        
         .contact-card h4 {
             font-size: 1.25rem;
             font-weight: 600;
             color: var(--text-primary);
             margin: 0;
         }
-
+        
         .contact-card-content p {
             color: var(--text-secondary);
             margin-bottom: 0.5rem;
             line-height: 1.5;
         }
-
+        
         .contact-card-content p:last-child {
             margin-bottom: 0;
         }
-
+        
         .contact-form-card {
             background: var(--bg-primary);
             padding: 3rem;
@@ -149,30 +151,30 @@
             position: relative;
             overflow: hidden;
         }
-
+        
         .contact-form-title {
             font-size: 1.875rem;
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 2rem;
         }
-
+        
         .form-group {
             margin-bottom: 1.5rem;
         }
-
+        
         .form-row {
             display: grid;
             grid-template-columns: 1fr;
             gap: 1rem;
         }
-
+        
         @media (min-width: 640px) {
             .form-row {
                 grid-template-columns: 1fr 1fr;
             }
         }
-
+        
         .form-label {
             display: block;
             font-size: 1rem;
@@ -180,7 +182,7 @@
             color: var(--text-primary);
             margin-bottom: 0.5rem;
         }
-
+        
         .form-input,
         .form-select,
         .form-textarea {
@@ -194,7 +196,7 @@
             font-size: 1rem;
             transition: all var(--transition-fast);
         }
-
+        
         .form-input:focus,
         .form-select:focus,
         .form-textarea:focus {
@@ -202,12 +204,12 @@
             border-color: var(--primary-color);
             box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
         }
-
+        
         .form-textarea {
             resize: vertical;
             min-height: 120px;
         }
-
+        
         .form-button {
             width: 100%;
             padding: 1rem 2rem;
@@ -221,19 +223,19 @@
             cursor: pointer;
             transition: all var(--transition-normal);
         }
-
+        
         .form-button:hover {
             transform: translateY(-2px);
             box-shadow: var(--shadow-lg);
         }
-
+        
         .map-container {
             margin-top: 3rem;
             border-radius: var(--radius-xl);
             overflow: hidden;
             box-shadow: var(--shadow-lg);
         }
-
+        
         .map-placeholder {
             height: 16rem;
             background: linear-gradient(135deg, var(--primary-color)/10, var(--accent-color)/10);
@@ -244,30 +246,41 @@
             color: var(--text-secondary);
             text-align: center;
         }
-
+        
         .map-placeholder svg {
             width: 3rem;
             height: 3rem;
             margin-bottom: 1rem;
             color: var(--primary-color);
         }
-
         /* Animation Triggers */
+        
         .contact-hero-content {
             animation: fadeInUp 1s ease-out;
         }
-
+        
         .contact-card {
             opacity: 0;
             transform: translateY(30px);
             animation: fadeInUp 0.6s ease-out forwards;
         }
-
-        .contact-card:nth-child(1) { animation-delay: 0.1s; }
-        .contact-card:nth-child(2) { animation-delay: 0.2s; }
-        .contact-card:nth-child(3) { animation-delay: 0.3s; }
-        .contact-card:nth-child(4) { animation-delay: 0.4s; }
-
+        
+        .contact-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        .contact-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .contact-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        .contact-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        
         .contact-form-card {
             opacity: 0;
             transform: translateY(30px);
@@ -275,6 +288,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -284,7 +298,7 @@
                     <h2>Trường THPT Thăng Long</h2>
                 </a>
             </div>
-            
+
             <!-- Desktop Navigation -->
             <nav class="nav-desktop">
                 <a href="index.html" class="nav-link">Trang chủ</a>
@@ -320,16 +334,15 @@
             <div class="floating-orb orb-1"></div>
             <div class="floating-orb orb-2"></div>
         </div>
-        
+
         <div class="container">
             <div class="contact-hero-content">
-                <h1 class="contact-hero-title">
-                    Liên hệ 
-                    <span class="gradient-text">với chúng tôi</span>
+                <h1 class="contact-hero-title font-bold">
+                    Liên hệ
+                    <span class="gradient-text font-bold">với chúng tôi</span>
                 </h1>
                 <p class="contact-hero-description">
-                    Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn. Hãy liên hệ với chúng tôi 
-                    để biết thêm thông tin về trường học và các chương trình giáo dục.
+                    Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn. Hãy liên hệ với chúng tôi để biết thêm thông tin về trường học và các chương trình giáo dục.
                 </p>
             </div>
         </div>
@@ -342,7 +355,7 @@
                 <!-- Contact Information -->
                 <div class="contact-info">
                     <h2 class="contact-info-title">Thông tin liên hệ</h2>
-                    
+
                     <div class="contact-card">
                         <div class="contact-card-header">
                             <div class="contact-icon">
@@ -419,7 +432,7 @@
                 <!-- Contact Form -->
                 <div class="contact-form-card">
                     <h3 class="contact-form-title">Gửi tin nhắn cho chúng tôi</h3>
-                    
+
                     <form id="contactForm">
                         <div class="form-row">
                             <div class="form-group">
@@ -431,17 +444,17 @@
                                 <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Văn An" required>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" id="email" name="email" class="form-input" placeholder="nguyen.van.an@example.com" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="phone" class="form-label">Số điện thoại</label>
                             <input type="tel" id="phone" name="phone" class="form-input" placeholder="0123 456 789">
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="inquiry" class="form-label">Loại yêu cầu</label>
                             <select id="inquiry" name="inquiry" class="form-select" required>
@@ -452,12 +465,12 @@
                                 <option value="general">Thông tin chung</option>
                             </select>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="message" class="form-label">Tin nhắn</label>
                             <textarea id="message" name="message" class="form-textarea" placeholder="Vui lòng chia sẻ câu hỏi hoặc ý kiến của bạn..." rows="5" required></textarea>
                         </div>
-                        
+
                         <button type="submit" class="form-button">
                             Gửi tin nhắn
                         </button>
@@ -492,7 +505,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Liên kết nhanh</h4>
                     <ul class="footer-links">
@@ -502,7 +515,7 @@
                         <li><a href="admissions.html">Tuyển sinh</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Thông tin</h4>
                     <ul class="footer-links">
@@ -512,7 +525,7 @@
                         <li><a href="#">Hỗ trợ</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Liên hệ</h4>
                     <div class="contact-info">
@@ -522,7 +535,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2024 Trường THPT Thăng Long. Tất cả quyền được bảo lưu.</p>
             </div>
@@ -539,7 +552,7 @@
                 <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
             </svg>
         </button>
-        
+
         <div class="fab-menu" id="fabMenu">
             <a href="index.html" class="fab-item">
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -574,23 +587,24 @@
         // Contact form submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             // Get form data
             const formData = new FormData(e.target);
             const data = Object.fromEntries(formData);
-            
+
             // Simple validation
             if (!data.firstName || !data.lastName || !data.email || !data.inquiry || !data.message) {
                 alert('Vui lòng điền đầy đủ thông tin bắt buộc!');
                 return;
             }
-            
+
             // Show success message
             alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.');
-            
+
             // Reset form
             e.target.reset();
         });
     </script>
 </body>
+
 </html>
